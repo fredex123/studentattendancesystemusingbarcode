@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Fredex - Student Attendance System Using Barcode</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Student Attendance System Using Barcode</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <!-- <a class="page-scroll" href="#Home">Home</a> -->
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <!-- <a class="page-scroll" href="#about">About</a> -->
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                    <li>
+                      <!--   <a class="page-scroll" href="#contact">Contact</a> -->
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome To Student Attendance System Using Barcode</div>
+                <div class="intro-heading">It's Nice To Meet You</div>
+                <a href="#portfolio" class="page-scroll btn btn-xl">Tell Me More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+   <!--  <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Home</h2>
+                    <h3 class="section-subheading text-muted">Know me more!</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-info fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading"> Project Background</h4>
+                    <p class="text-muted">Online Printed T-Shirt Designing will have registration for new Users and login for Members. This software will have Admin Login which will check for new request and orders, Member Login in which they can create customize design using wide range of Colours & Design, and can even place bulk order for the same. This Ordered T-Shirt will be delivered to their door steps. The Admin Login will accept request to check design, approve Order, and create bill. </p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Project Scope</h4>
+                    <p class="text-muted">Online Printed T-shirt Designing will have registration for new Users and login for Members. This software will have Admin Login which will check for new request and orders, Members Login in which they can create customize design using wide range of Colors & Design, and can even place bulk order for the same. This Ordered T-shirt will be delivered to their door steps. The Admin Login will accept request to check design, approve Order, and create bill</p>
+                </div>
+                <!-- <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Web Security</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div> -->
+  <!--           </div>
+        </div>
+    </section> -->
+ -->
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Portfolio</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/charter2.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Project Team Contract </h4>
+                        <p class="text-muted">Team Members</p>
+                    </div>
+                </div>
+                  <div><div><div>
+                 <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                         <img src="img/portfolio/background.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Project Background </h4>
+                        <p class="text-muted">Documents</p>
+                    </div>
+                </div>
+                  <div><div><div>
+                 <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+
+                        <img src="img/portfolio/charter2.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Project Charter</h4>
+                        <p class="text-muted">Student Attendance System Using Barcode</p>
+                    </div>
+                </div>
+                </div>  <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/scope2.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Project Scope</h4>
+                        <p class="text-muted">System Scope</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/WBS2.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>W B S</h4>
+                        <p class="text-muted">Work Breakdown Structure</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/gantt2.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Project Gantt Chart</h4>
+                        <p class="text-muted"> Gantt Chart</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/flowchart.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Bussines System Flow</h4>
+                        <p class="text-muted"> Flow Chart</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal34" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/learn.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Lesson Learned</h4>
+                        <p class="text-muted"> Documents</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal33" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/Preport.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Progress Report</h4>
+                        <p class="text-muted"> Documents</p>
+                    </div>
+                </div>
+                
+                
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal32" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/Slide1.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Wireframe</h4>
+                        <p class="text-muted"> Interface</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal35" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/ContexDia.jpeg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Data Diagram</h4>
+                        <p class="text-muted"> Diagram</p>
+                    </div>
+                </div>
+
+
+            </div>
+              
+        </div>
+    </div></div></div>
+</section>
+
+    <!-- About Section -->
+    <!-- <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2009-2011</h4>
+                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>March 2011</h4>
+                                    <h4 class="subheading">An Agency is Born</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>December 2012</h4>
+                                    <h4 class="subheading">Transition to Full Service</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>July 2014</h4>
+                                    <h4 class="subheading">Phase Two Expansion</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Be Part
+                                    <br>Of Our
+                                    <br>Story!</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Team</h2>
+                    <h3 class="section-subheading text-muted">STUDENT ATTENDANCE SYSTEM USING BARCODE</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/coco.png" class="img-responsive img-circle" alt="">
+                        <h4>FREDDIE VALENZUELA COCO</h4>
+                        <p class="text-muted">Project Manager</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Kay Garland</h4>
+                        <p class="text-muted">Lead Designer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Larry Parker</h4>
+                        <p class="text-muted">Lead Marketer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Diana Pertersen</h4>
+                        <p class="text-muted">Lead Developer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Aside -->
+    <aside class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Contact Section -->
+  <!--   <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Your Website 2019</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+     <!-- Portfolio Modal 33 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal33" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 style="  text-align: center; ">Progress Report</h2>
+                                <p class="item-intro text-muted">Student Attendance System Using Barcode</p>
+                                
+                               <b> Project Name:</b> Student Attendance System Using Barcode <br>
+<b> Team Member Name:</b> Freddie Coco, fred@gmail.com <br>
+<b>Date:</b>  August 10<br><br>
+
+<b> Work completed this week:</b><br><br>
+•   Organized all the needed requirements<br>
+•   Met with the main supplier<br>
+•   Organized the time to work and payroll<br>
+•   Started designing to the preferred system interface<br><br>
+<b> Work to Complete this week:</b><br><br>
+•   Continue all the works that needs to be done<br>
+•   Prefer a system report for weekly report<br>
+•   Prefer a system meeting for discussion <br><br>
+
+<b>What’s going well and why:</b> <br><br>
+The system design went well because we do all the task well.<br><br>
+<b> What’s not going well and why:</b><br><br>
+    It’s so difficult to make a system templates because of some interference of some other works to do in the company.<br><br>
+<b>Suggestion/Issues:</b> <br><br>
+•   Hold a special meeting to decide how to organize the templates and example on the intranet site.<br><br>
+<b> Project changes:</b><br><br>
+•   I think we can stay on schedule, but it will cost some dollar for more worker. That’s doubling our budget in that area.<br><br>
+
+ <hr>
+    
+                            <br><br>   <b> Project Name:</b> Student Attendance System Using Barcode <br>
+<b> Team Member Name:</b> Freddie Coco, fred@gmail.com <br>
+<b>Date:</b>  September 10<br><br>
+
+<b> Work completed this week:</b><br><br>
+•   Complete a sample flowchart <br>
+•   Organized all the design interface<br>
+
+•   Complete research about the needed system flow<br><br>
+<b> Work to Complete this week:</b><br><br>
+•   Create an organized flowchart<br>
+•   Prefer a system report for weekly report<br>
+•   Create a sample data flow <br><br>
+
+<b>What’s going well and why:</b> <br><br>
+The system design went well because we do all the task well.<br><br>
+<b> What’s not going well and why:</b><br><br>
+    It’s so difficult to make a system templates because of some interference of some other works to do in the company.<br><br>
+<b>Suggestion/Issues:</b> <br><br>
+•   Hold a special meeting to decide how to organize the templates and example on the intranet site.<br><br>
+<b> Project changes:</b><br><br>
+•   I think we can stay on schedule, but it will cost some dollar for more worker. That’s doubling our budget in that area.<br><br>
+
+<hr>
+    
+                            <br><br>   <b> Project Name:</b> Student Attendance System Using Barcode <br>
+<b> Team Member Name:</b> Freddie Coco, fred@gmail.com <br>
+<b>Date:</b>  October 18<br><br>
+
+<b> Work completed this week:</b><br><br>
+•   Complete making system data flow  <br>
+•   Complete making a context diagram<br>
+•   Complete making a progress report <br>
+•   Complete research about the needed system flow<br><br>
+<b> Work to Complete this week:</b><br><br>
+•   Prefer a website for the system<br>
+•   Prefer a system final report<br>
+•   Publish the website for it to be pass <br><br>
+
+
+<b>What’s going well and why:</b> <br><br>
+The system design went well because we do all the task well.<br><br>
+<b> What’s not going well and why:</b><br><br>
+    It’s so difficult to make a system templates because of some interference of some other works to do in the company.<br><br>
+<b>Suggestion/Issues:</b> <br><br>
+•   Hold a special meeting to decide how to organize the templates and example on the intranet site.<br><br>
+<b> Project changes:</b><br><br>
+•   I think the system went fine. There is no changes because it’s already final.<br><br>
+
+
+                                <p></p>
+                               
+                                <ul class="list-inline">
+                                    
+                                    <li></li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-arrow-back"></i> Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Portfolio Modal 34 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal34" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 style="  text-align: center; ">Lesson learned</h2>
+                                <p class="item-intro text-muted">Student Attendance System Using Barcode</p>
+                                
+                          <b>      Project Name:</b>  Student Attendance System Using Barcode <br>
+<b>Project Sponsor:</b>  John McGreevy<br>
+<b>Project Dates:</b> June 10 – October 22<br>
+<b>Final Budget:</b> $ 100,000.00<br><br>
+
+<b>1.  Did the project meet scope, time, and cost goals?</b><br><br>
+We did meet scope and time goals, but we had additional $5,000, which the sponsor did approve.<br><br>
+<b>2.  What were the success criteria listed in the project scope statement?</b><br><br>
+
+o   Develop a system for Student Attendance using bar code reader for Gingoog City Colleges.<br>
+o   Minimize the student cheating by asking their friends to sign the attendance form.<br>
+o   Can reduce time and the database report can be viewed and be printed immediately by the lecturer. Thus, the system is more efficient.<br>
+o   Less effort and more efficient work for all faculty teachers.<br><br>
+
+<b>3.  Reflect on whether you met the project success criteria.</b><br><br>
+As state above, we complete and meet all the preferred statement. We have already documented all the happenings on the going of this system. We have also received excellent feedback from the users and the other client about the new SASUB.<br><br>
+
+<b>4.  In terms of managing the project, what were the main lessons your team learned from this project? </b><br>
+The main lessons we learned include the following:<br><br>
+
+•   Having a good team will make the system project come to success.<br>
+•   Having a good sponsor was great because there are no worst difficulties incomes to having problem in money.<br>
+•   Teamwork really help your project meet all the needs of the project system.<br><br>
+
+<b> 5.  Describe one example of what went right on this project.</b><br><br>
+
+The project went very fine, because we have completed and meets all the needs for the project.<br><br>
+
+<b>6.  Describe one example of what went wrong on this project.</b><br><br>
+
+The project went wrong when we have to change the flow chart because it did not meet the real flow of this project system.<br><br>
+
+<b>7.  What will you do differently on the next project based on your experience working on this project? </b><br><br>
+
+I will use my experience to be my inspiration and organize the plans for the new project system.<br><br><br>
+
+
+                                <p></p>
+                               
+                                <ul class="list-inline">
+                                    
+                                    <li></li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-arrow-back"></i> Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 style="  text-align: center; ">GANTT CHART</h2>
+                                <p class="item-intro text-muted">Student Attendance System Using Barcode</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/gantt2.png" alt="">
+                                <p></p>
+                               
+                                <ul class="list-inline">
+                                    
+                                    <li></li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-arrow-back"></i> Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 35 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal35" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 style="  text-align: center; ">Data Flow Diagram</h2>
+                                <p class="item-intro text-muted">Student Attendance System Using Barcode</p>
+                                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+     </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="img/portfolio/ContexDia.jpeg" alt="Home">
+      <div class="carousel-caption">
+       
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/portfolio/dataflow.jpeg" alt="Chicago">
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+
+    
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+                                <p></p>
+                               
+                                <ul class="list-inline">
+                                    
+                                    <li></li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-arrow-back"></i> Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2 style="  text-align: center; ">Work Breakdown Structure</h2>
+                                <p class="item-intro text-muted" > Student Attendance System Using Barcode </p>
+                                <img class="img-responsive img-centered" src="img/portfolio/WBS.jpg" alt="">
+                                <b>1.0 Initiating </b><br>
+1.1 Identify key stakeholders <br>
+1.2 Prepare project charter <br>
+1.3 Hold project kick-off meeting<br><br>
+<b>2.0 Planning</b><br>
+2.1 Hold team planning meeting<br>
+2.2 Prepare team contract<br>
+2.3 Prepare scope statement<br>
+2.4 Prepare WBS<br>
+2.5 Prepare schedule and cost baseline<br><br>
+2.5.1   Determine task resources<br>
+2.5.2   Determine task durations<br>
+2.5.3   Determine task dependencies<br>
+2.5.4   Create draft Gantt chart<br>
+2.5.5   Reviews and finalize Gantt chart<br>
+2.6 Identify, discuss, and priorities risks<br><br>
+<b>3.0 Executing</b><br><br>
+3.1 Survey<br>
+3.2 Gather information<br>
+3.3 Prepare diagram<br>
+3.4 Start coding<br>
+3.5 System testing<br>
+3.6 Finalize the system<br><br>
+<b>4.0 Monitoring and Controlling</b><br><br>
+4.1 Progress reports<br><br>
+<b>5.0 Closing</b><br><br>
+5.1 Prepare final project report<br>
+5.2 Prepare final project presentation<br>
+5.3 Lessons learned<br><br><br><br>
+
+                                <p></p>
+                                
+                                <ul class="list-inline">
+
+                                    
+                                    <li></li>
+                                </ul>
+
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-arrow-back"></i> Back</button>
+                                <p></p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 style="  text-align: center; ">BUSINESS SYSTEM FLOW</h2>
+                                <p class="item-intro text-muted">Student Attendance System Using Barcode</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/flowchart.png" alt="">
+                                <p></p>
+                                
+                                <ul class="list-inline">
+
+                                    
+                                    <li></li>
+                                </ul>     
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal32" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 style="  text-align: center; ">WIREFRAME</h2>
+                                <p class="item-intro text-muted">Student Attendance System Using Barcode</p>
+                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"></li>
+    <li data-target="#myCarousel" data-slide-to="6"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="img/portfolio/Slide1.jpg" alt="Home">
+      <div class="carousel-caption">
+       
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/portfolio/Slide2.jpg" alt="Chicago">
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/portfolio/Slide3.jpg" alt="New York">
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/portfolio/Slide4.jpg" alt="New York">
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/portfolio/Slide5.jpg" alt="New York">
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/portfolio/Slide6.jpg" alt="New York">
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+                                
+                                <ul class="list-inline">
+
+                                    
+                                </ul>     
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 style="  text-align: center; ">Project Charter | Team Member</h2>
+                                <p class="item-intro text-muted">Student Attendance System Using Barcode</p>
+                               
+                                <h id="ModalFont" style=" font-size:15px; text-align: left; ">
+                                   <b>Project title:</b> Student Attendance System Using Barcode <br>
+                                   <b>Project Start Date: </b> June 10, 2019   <br>          
+                                   <b>Projected Finish Date: </b> October 31, 2019 <br>
+                                   <b> Budget Information: </b>The firm has allocated $20, 000 for this project. The majority of costs of this project will be internal labor. With an estimated overtime per week.<br>
+                                   <b>Project Manager:</b> Freddie V. Coco , 09356294018 , fredex.coco@gmail.com<br> 
+                                    <b>Project Objectives:</b> <br>
+•   Develop a system for Student Attendance using bar code reader for Gingoog City Colleges. <br>
+•   Minimize the student cheating by asking their friends to sign the attendance form.  <br>
+•   Can reduce time and the database report can be viewed and be printed immediately by the lecturer. Thus, the system is more efficient. <br>
+•   Less effort and more efficient work for all faculty teachers. <br>
+<b>Approach:</b> <br>
+a.  Administration Module<br>
+•   Log-in/Sign-up: This where the admin sign up and log in to enter the system.<br>
+•   Student Details: This module deals with the allocation of roll no and personal details for new batch. It will generate personal details of student and academic details of the students with the passport photos.<br>
+•   Attendance Details: It will help to get the report of weekly and consolidate of the attendance.<br>
+•   Report Details: Report can be taken by daily, weekly and consolidate.
+ <br> 
+
+
+
+                                </p>
+                                     <img class="img-responsive img-centered" src="img/portfolio/charter.png" alt="">
+                                <ul class="list-inline">
+
+                                    <li>Sign-Off: (Signature of all the Stakeholder)
+</li>
+                                    <li>| Comments: 
+    “ I will post this information in no time” –  Harry Potter</li>
+                                    <li></li>
+                                </ul>   
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-back"></i> Back </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 style="  text-align: center; ">Team Contract</h2>
+                                <p class="item-intro text-muted">Student Attendance System Using Barcode</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/teamcontract.png" alt="">
+                                <h id="ModalFont" style=" font-size:15px; text-align: left; ">
+                                   <b>  Code of Conduct:</b> As a project team, we will:<br>
+                                           •   Be Responsible<br>
+                                            •   Be Patience <br>
+
+                                            •   Be Punctual<br>
+                                            •   Be Professional<br>
+                                            •   Be Polite<br>
+                                            •   Be Generous <br>
+                                            •   We need to cooperate every task and do our best to have a good quality result <br>
+                                   <b>    Participation:</b> We will: <br>
+                                        •   Participate on Every Meeting <br>
+                                        •   Work together as team <br>
+                                        •   Share your ideas to everyone, be honest, and stay calm.<br>
+                                       <b>    Communication:</b> We will: <br>
+
+•   Do not disregards phone call.<br>
+•   Response in every Text Message, Emails, Chats.<br> 
+•   Be in alert<br>
+•   Ask in every concern<br>
+•   Clarify your Task<br>
+<b>
+    Problem Solving: </b> We will: <br>
+•   We will solve the problem as a team <br>
+•   Always find a solution <br>
+•   Refrain on Blaming our Team Members <br>
+•   Do not Overthink <br>
+<b>
+   Meeting Guidelines:</b> We will: <br>
+•   We will Meet every Saturday at exactly 1pm <br>
+•   Be Punctual <br> 
+•   Attendance is Important <br>
+•   No Excuses <br>
+•   Raise up your Idea <br>
+•   Ask / Clarify your Concerns <br>
+
+
+
+                                <p></p>
+                                <ul class="list-inline">
+
+                                    
+                                    <li></li>
+                                </ul>   
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!--  <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 style="  text-align: center; ">Project Scope</h2>
+                                <p class="item-intro text-muted">Online Printed T- Sjirt Designing</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/Scope.jpg" alt="">
+
+                               <b> I.  System Objective</b> <br>
+The objectives of this Student Online Attendance System using bar code reader are:<br> <br>
+
+o   Develop a system for Student Attendance using bar code reader for Gingoog City Colleges.<br>
+o   Minimize the student cheating by asking their friends to sign the attendance form.<br>
+o   Can reduce time and the database report can be viewed and be printed immediately by the lecturer. Thus, the system is more efficient.<br>
+o   Less effort and more efficient work for all faculty teachers.<br><br>
+
+<b>II. System Scope statement </b><br><br>
+
+<b>a.  Administration Module</b> <br><br>
+<b>•   Log-in/Sign-up:</b> This where the admin sign up and log in to enter the system.<br>
+<b>•   Student Details:</b> This module deals with the allocation of roll no and personal details for new batch. It will generate personal details of student and academic details of the students with the passport photos.<br>
+<b>•   Attendance Details:</b> It will help to get the report of weekly and consolidate of the attendance.<br>
+<b>•   Report Details:</b> Report can be taken by daily, weekly and consolidate.<br><br>
+
+<b>   Limitation:</b><br><br>
+
+o   System unable to recognize cheating (e.g. students swipe the ID of his classmate).<br>
+o   Does not track students cutting classes.<br>
+o   System only for elementary and high school students.<br>
+o   System does not support college student’s attendance.<br><br>
+
+                                <p></p>
+                                <ul class="list-inline">
+
+                                   
+                                    <li></li>
+                                </ul>   
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Portfolio Modal 7 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 style="  text-align: center; ">Project Background</h2>
+                                <p class="item-intro text-muted">Student Attendance System Using Barcode </p>
+                                <img class="img-responsive img-centered" src="img/portfolio/BackGround.jpg" alt="">
+                                The project is a system that takes down students' attendance using barcode. This is an interesting concept set forth to automate the traditional attendance system by using authentication technique. The traditional system requires a register maintained for manually marking attendance for the students which is time consuming. Hence this proposed project eliminates the need of maintaining attendance sheet. 
+The proposed system uses barcode method for authenticating students with a unique barcode that represents their unique id. Every student is provided with a card that contains the barcode. Students just have to scan their cards using barcode reader and the system notes down their attendance as per dates. System then stores all the students' attendance records and generates defaulter list and reports for admin. Such kind of application is very useful in school as well as in college for taking daily attendance.<br> <br>
+  <b> Features:</b> <br>
+•   Admin login: Admin is provided with a login from where he monitors and administers all the students' information and records. <br>
+•   Barcode Reading: Students have to scan their card through barcode reader and the id thus read by the system is stored for that particular day. <br>
+•   Defaulter list: The system generates defaulter list in excel sheet for specified period provided by admin.<br>
+•   Report generation: At the end of attendance process system automatically generates overall report for the class in excel sheet.<br>
+•   Search option: Admin can even search for particular student's attendance details using search option in the system. <br> <br><br>
+<b> Software Requirements:</b><br>
+•   Windows OS(Windows 10) <br>
+•   Sql 2005<br>
+•   Visual studio 2008<br>
+<b> Hardware Components:</b><br>
+•   Processor – i3 or more <br>
+•   Hard Disk – 5 GB<br>
+•   Memory – 1GB RAM<br>
+•   Barcode Reader<br>
+
+<b> Advantages of the proposed project:-</b> <br> <br>
+1.  Students will be more regular in attending their classes since now no attendance sheet signature is required, so no friend or any other student can make an attendance on behalf of others as barcodes are unique for every student.<br>
+2.  Teachers do not need to waste their time approximately 15min of 1hour for taking attendance of students.<br>
+3.  No need to maintain attendance sheet as the attendance are electronically stored in database.<br>
+4.  The system helps the faculty to easily find out defaulters.<br>
+5.  User may easily get attendance history of a particular student.<br>
+6.  It saves time, cost, efforts and institute resources.<br><br>
+
+<b>
+Disadvantages:</b><br>
+
+The only disadvantage is that every class requires a barcode reader to access the system.<br><br>
+<b>Applications:</b><br> 
+1.  The system can be used for schools, college, or universities for taking down attendance.<br><br><br><br>
+
+
+
+                                <p></p>
+                                <ul class="list-inline">
+
+                                    
+                                    <li></li>
+                                </ul>   
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
+
+</body>
+
+</html>
